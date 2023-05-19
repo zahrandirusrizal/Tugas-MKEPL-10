@@ -5,12 +5,11 @@ public class Counter {
 	private int count;
 	
 	public Counter() {
-		count = 0;
-		count = 1;
+		this.reset();
 	}
 		
 	public void reset() {
-		count = 0;
+		count = 1;
 	}
 	
 	public void increment() {
