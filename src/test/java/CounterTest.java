@@ -10,7 +10,7 @@ public class CounterTest {
 	public void testReset() {
 		Counter testCounter = new Counter();
 		
-		for(int i = 0; i <10; i++) {
+		for(int i = 0; i <20; i++) {
 			testCounter.increment();
 		}
 		
@@ -23,7 +23,7 @@ public class CounterTest {
 	public void testIncrement() {
 		Counter testCounter = new Counter();
 		
-		for(int i = 1; i <10; i++) {
+		for(int i = 1; i <20; i++) {
 			testCounter.increment();
 			assertEquals(testCounter.getCount(), i);
 		}
@@ -33,7 +33,7 @@ public class CounterTest {
 	public void testDecrement() {
 		Counter testCounter = new Counter();
 		
-		for(int i = 1; i <10; i++) {
+		for(int i = 1; i <20; i++) {
 			testCounter.decrement();
 			assertEquals(testCounter.getCount(), i * -1);
 		}
